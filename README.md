@@ -1,4 +1,4 @@
-# Javascript-codingnotes
+# javascriptJavascript-codingnotes
 Learning how to create .md files and compiling JS tutorials
 
 ## 1. Introduction
@@ -9,20 +9,20 @@ Learning how to create .md files and compiling JS tutorials
 * https://codepen.io.pen/ (3-in-1 Editor with HTML, CSS and JS)
 * https://scrimba.com (Both Popup and Console Logs)
 
-## 2. Javascript Syntax Features
+## 2. JavaScript Syntax Features
 ### 2.1 Comments!
 Comments are meant to increase readability for programmers, and will be ignored by computers!
-```
+```javascript
 var number = 5; //in-line comment
 
 /*
 This is a
 multi-line comment
 */
- ```
+```
 ### 2.2 Data Types
-Javascript provides 7 common datatypes:
-Undefined, null, boolean, string, symbol, number and object
+JavaScript provides 7 common datatypes:
+Undefined, null, Boolean, String, symbol, number and object
 
 ```javascript
 // 1.Undefined - Basically any variable that hasn't been initialized before
@@ -46,7 +46,20 @@ var string3 = `"'Hello!'"`; //Insert both '' and "" by using backticks!
 var myNumber = 1997;
 var myFloat = 3.1415;
 
-// 7. Objects - Container for Key Value Pairs (Come back later!)
+// 7. Objects - Container for Key Value Pairs (Dictionary in Python)
+var testObj = {"name": "John", "age": 25};
+var name = testObj["name"]; // Bracket Notation (Required when key name has a space in it)
+var age = testObj.age; // Dot Notation (String with no spaces)
+testObj.favColor = "Blue" // Add a property to an object
+testObj["favColor"] = "Blue" // Same as above
+
+//Data types like strings, integers, and others can be used as keys
+
+//To delete an object, use the DELETE keyword
+delete testObj.favColor;
+
+// To check if Object has Property value, use hasOwnProperty(value)
+testObj.hasOwnProperty("name"); // returns true
 ```
 
 ### 2.3 Initializing Variables
@@ -115,60 +128,60 @@ var stringLength = firstName.length
 ### 2.7 Arrays
 Allows you to store list of values
 Can be of **different** datatypes
-```
+```javascript
 var ourArray = ["John", 23];
 var nextArray = [true, false, 17, "Hello World!"];
 ```
 
 #### Nested Arrays
 Arrays can be stored within other arrays
-```
+```javascript
 var nestedArray = [["the universe", 42], ["everything", 101010]];
 ```
 #### Accessing Array Elements
-```
+```javascript
 var myArray = [50, 60, 70];
 var myNumber = myArray[0]; //myNumber has value 50
 
 myArray[1] = 35; // myArray is now [50, 35, 70];
 ```
-For nested arrays, use multiple sqaure brackets
-```
+For nested arrays, use multiple square brackets
+```javascript
 var nestedArray = [[1, 2], [3, 4]];
 myNumber = nestedArray[0][1]; // Equals to 2, left most square bracket is the outer array
 ```
 
 #### Manipulating Array Elements
 Using *push()*, append one or more elements at the END of the array
-```
+```javascript
 var myArray = [50, 60, 70];
 mrArray.push(80, 90); // myArray is now [50, 60, 70, 80, 90];
 ```
 
 Using *pop()*, returns and removes the LAST element of an array
-```
+```javascript
 var ourArray = [10, 20, 30];
 var removedNumber = ourArray.pop();
 //removedNumber is 30, and ourArray is now [10, 20]
 ```
 
 Using *shift()*, similar to pop, but returns and removes the FIRST element from the array
-```
+```javascript
 var ourArray = [10, 20, 30];
 var removedNumber = ourArray.pop();
 //removedNumber is 10, and ourArray is now [20, 30]
 ```
 
 Using *unshift()*, similar to push, but appends one or more elements at the START of the array
-```
+```javascript
 var ourArray = ["B", "C", "D"];
 ourArray.unshift("A");
 // ourArray is now ["A". "B", "C", "D"]
 ```
 
 ## 3. Creating Functions!
-Create your own reuseable pieces of code using the *function* keyword!
-```
+Create your own reusable pieces of code using the *function* keyword!
+```javascript
 function ourNewFunction() {
  console.log("Hello, World!");
 }
@@ -187,7 +200,7 @@ When you have 2 variables with the same name, one local and one global, in a loc
 ## 4. Creating Conditional Statements
 
 ### Using If, Else If, and Else Statements
-```
+```javascript
 if (trueOrFalse) {
  // Do Something
 } else if (trueOrFalse){
@@ -197,7 +210,7 @@ if (trueOrFalse) {
 }
 ```
 ### Using Switch, Case, Default Statements
-```
+```javascript
 switch(val){
  case 1:
   answer = "One";
@@ -263,3 +276,5 @@ The algorithm to compare two strings is simple:
 */
 
 // Use && and || for AND and OR respectively
+
+```
