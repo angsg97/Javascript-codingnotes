@@ -1,6 +1,8 @@
 # javascriptJavascript-codingnotes
 Learning how to create .md files and compiling JS tutorials
 
+A useful resource: https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow/cheatsheet
+
 ## 1. Introduction
 ### List of IDEs, websites and ways to code JS
 * Any IDE like VSCode, Sublime, etc.
@@ -125,7 +127,32 @@ firstName[0] = 'M'; // We CAN'T do this!
 var stringLength = firstName.length
 ```
 
+#### Using *Template Strings* for Formatting and Multi-Line Strings
+
+```javascript
+let age = 45;
+let name = 'John';
+
+let formattedString = `My name is ${name}, and I'm ${age} years old.`;
+// Output: My name is John, and I'm 45 years old.
+
+let multiLineString = `My name is ${name},
+I'm ${age} years old,
+and I love template strings!`;
+// Output: 
+// "My name is John,
+// I'm 100 years old,
+// and I love template strings!"
+```
+
+
+
+
+
+
+
 ### 2.7 Arrays
+
 Allows you to store list of values
 Can be of **different** datatypes
 ```javascript
