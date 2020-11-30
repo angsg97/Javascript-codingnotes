@@ -1,4 +1,4 @@
-# javascriptJavascript-codingnotes
+# Javascript-codingnotes
 Learning how to create .md files and compiling JS tutorials
 
 A useful resource: https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow/cheatsheet
